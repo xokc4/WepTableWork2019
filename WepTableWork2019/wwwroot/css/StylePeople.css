@@ -1,0 +1,40 @@
+﻿
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 160px;
+    margin-right: 160px;
+    color: cadetblue;
+    background-color: black;
+}
+.Main_boby {
+    text-align: left;
+    background-color: aliceblue;
+}
+.Main_boby__Main_text {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+.Main_boby__Inf_text {
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.Main_boby__Inf_text__td{
+    margin-bottom:20px;
+
+}
+.Main_boby__Inf_text__td:last-child{
+    margin-bottom:0px;
+}
+.Main_boby__Link_list {
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+

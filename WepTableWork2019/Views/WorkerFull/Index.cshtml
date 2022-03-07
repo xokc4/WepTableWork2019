@@ -1,0 +1,42 @@
+﻿@using WepTableWork2019
+@using WepTableWork2019.Peoples
+@model List<People>
+<html>
+<head>
+    <link href="~/css/site.css" rel="stylesheet" type="text/css" />
+    <title>
+        Страница с данными о сотрудниках
+    </title>
+</head>
+<body>
+    <div class="Main_boby">
+        <div class="Main_boby__Text_Center">
+              Таблица с информацией о работниках 
+        </div>
+        <table class="Main_boby__Table_Inf">
+            <thead>
+                <tr>
+                    <th class="Main_boby__Table_Inf__Line_Name">ID</th>
+                    <th class="Main_boby__Table_Inf__Line_Name">Фамилия</th>
+                    <th class="Main_boby__Table_Inf__Line_Name">Имя</th>
+                    <th class="Main_boby__Table_Inf__Line_Name">Отчество</th>
+                </tr>
+            </thead>
+            <tbody class="Main_boby__Table_Inf__Colum">
+                @foreach (var person in Model)
+                {
+                    <form class="Colum" action="~/WorkerPeople/People" method="post">
+                        <tr>
+                        <td class="Main_boby__Table_Inf__Line_information">
+                            <input class="Main_boby__Table_Inf__Line_information__Button" type="submit" value="@person.ID" name="IDPeople"></td>
+                        <td class="Main_boby__Table_Inf__Line_information">@person.Surname</td>
+                        <td class="Main_boby__Table_Inf__Line_information">@person.Name</td>
+                        <td class="Main_boby__Table_Inf__Line_information">@person.Lastname</td>
+                        </tr>
+                    </form>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

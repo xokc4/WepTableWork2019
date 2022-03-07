@@ -1,0 +1,41 @@
+﻿body {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 160px;
+    margin-right: 160px;
+    color: cadetblue;
+    font-size: 40px;
+    background-color: black;
+}
+
+.Main_boby {
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.Main_boby__Text_Center {
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+.Main_boby__Table_Inf {
+    width: 600px;
+    height: 1000px;
+    margin-left: 20px;
+}
+.Main_boby__Table_Inf__Line_Name {
+    font-size: 30px;
+}
+.Main_boby__Table_Inf__Line_information {
+    font-size: 30px;
+    padding-left: 30px !important;
+}
+.Main_boby__Table_Inf__Line_information:first-child {
+        padding-left: 7px !important;
+}
+.Main_boby__Table_Inf__Colum {
+    margin: 0px;
+    font-size: 40px;
+}
+.Main_boby__Table_Inf__Line_information__Button {
+    cursor: pointer;
+}
