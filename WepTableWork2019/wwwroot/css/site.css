@@ -17,6 +17,9 @@
     margin-bottom: 60px;
     font-size: 40px;
 }
+.Main_boby__Table_And_Temple{
+    display: flex;
+}
 .Main_boby__Table_Inf {
     width: 600px;
     height: 1000px;
@@ -38,4 +41,12 @@
 }
 .Main_boby__Table_Inf__Line_information__Button {
     cursor: pointer;
+}
+.AddPeople {
+    text-align: left;
+    border: 4px double black;
+    padding: 20px;
+}
+.AddPeople__Add_Element {
+    margin-bottom: 20px;
 }

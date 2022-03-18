@@ -9,24 +9,51 @@
     </title>
 </head>
 <body>
-    
     <div class="Main_boby">
         <div class="Main_boby__Main_text">
             Полная информация о работнике
         </div>
         <div class="Main_boby__Inf_text">
-            <div class="Main_boby__Inf_text__td">Айди работника - @Model.ID</div>
-            <div class="Main_boby__Inf_text__td">Фамилия работника - @Model.Surname</div>
-            <div class="Main_boby__Inf_text__td">Имя работника - @Model.Name</div>
-            <div class="Main_boby__Inf_text__td">Отчество работника - @Model.Lastname</div>
-            <div class="Main_boby__Inf_text__td">Номер телефона работника - @Model.Phone</div>
-            <div class="Main_boby__Inf_text__td">Адрес работника - @Model.Adress</div>
-            <div class="Main_boby__Inf_text__td">О работнике - @Model.Description</div>
+            <form action="~/WorkerPeople/Update" method="put">
+                <div>
+                    <label class="Main_boby__Inf_text__td">Айди работника - </label>
+                    <label>@Model.ID</label>
+                </div>
+                <div>
+                    <label class="Main_boby__Inf_text__td">Фамилия работника -</label>
+                    <input name="surname" value="@Model.Surname" />
+                </div>
+                <div>
+                    <label class="Main_boby__Inf_text__td">Имя работника -</label>
+                    <input name="name" value="@Model.Name" />
+                </div>
+                <div>
+                    <label class="Main_boby__Inf_text__td">Отчество работника -</label>
+                    <input name="lastname" value="@Model.Lastname" />
+                </div>
+                <div>
+                    <label class="Main_boby__Inf_text__td">Номер телефона работника -</label>
+                    <input name="phone" value="@Model.Phone" />
+                </div>
+                <div>
+                    <label class="Main_boby__Inf_text__td">Адрес работника -</label>
+                    <input name="adress" value="@Model.Adress" />
+                </div>
+                <div>
+                    <label class="Main_boby__Inf_text__td">О работнике -</label>
+                    <input name="description" value="@Model.Description" />
+                </div>
+                <input type="submit" value="Редактировать" />
+            </form>
+        </div>
+        <div>
+            <form action="~/WorkerPeople/Delete" method="DELETE">
+                <input type="submit" value="Удалить" />
+            </form>
         </div>
         <div class="Main_boby__Link_list">
             <a href="/WorkerFull/Index">Перейти обратно к таблице с пользователями</a>
         </div>
     </div>
-    
 </body>
 </html>

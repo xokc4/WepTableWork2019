@@ -13,30 +13,58 @@
         <div class="Main_boby__Text_Center">
               Таблица с информацией о работниках 
         </div>
-        <table class="Main_boby__Table_Inf">
-            <thead>
-                <tr>
-                    <th class="Main_boby__Table_Inf__Line_Name">ID</th>
-                    <th class="Main_boby__Table_Inf__Line_Name">Фамилия</th>
-                    <th class="Main_boby__Table_Inf__Line_Name">Имя</th>
-                    <th class="Main_boby__Table_Inf__Line_Name">Отчество</th>
-                </tr>
-            </thead>
-            <tbody class="Main_boby__Table_Inf__Colum">
-                @foreach (var person in Model)
-                {
-                    <form class="Colum" action="~/WorkerPeople/People" method="post">
+        <div class="Main_boby__Table_And_Temple">
+            <div class="Main_boby__Table_And_Temple__Table">
+                <table class="Main_boby__Table_Inf">
+                    <thead>
                         <tr>
-                        <td class="Main_boby__Table_Inf__Line_information">
-                            <input class="Main_boby__Table_Inf__Line_information__Button" type="submit" value="@person.ID" name="IDPeople"></td>
-                        <td class="Main_boby__Table_Inf__Line_information">@person.Surname</td>
-                        <td class="Main_boby__Table_Inf__Line_information">@person.Name</td>
-                        <td class="Main_boby__Table_Inf__Line_information">@person.Lastname</td>
+                            <th class="Main_boby__Table_Inf__Line_Name">ID</th>
+                            <th class="Main_boby__Table_Inf__Line_Name">Фамилия</th>
+                            <th class="Main_boby__Table_Inf__Line_Name">Имя</th>
+                            <th class="Main_boby__Table_Inf__Line_Name">Отчество</th>
                         </tr>
-                    </form>
-                }
-            </tbody>
-        </table>
+                    </thead>
+                    <tbody class="Main_boby__Table_Inf__Colum">
+                        @foreach (var person in Model)
+                        {
+                            <form class="Colum" action="~/WorkerPeople/People" method="post">
+                            <tr>
+                                <td class="Main_boby__Table_Inf__Line_information">
+                                    <input class="Main_boby__Table_Inf__Line_information__Button" type="submit" value="@person.ID" name="IDPeople">
+                                </td>
+                                <td class="Main_boby__Table_Inf__Line_information">@person.Surname</td>
+                                <td class="Main_boby__Table_Inf__Line_information">@person.Name</td>
+                                <td class="Main_boby__Table_Inf__Line_information">@person.Lastname</td>
+                            </tr>
+                            </form>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="AddPeople">
+                <form class="" action="~/WorkerFull/AddPeople" method="PUT">
+                    <div class="AddPeople__Add_Element">
+                        <label>Фамилия</label>
+                        <input name="surname" />
+                        <label>Имя</label>
+                        <input name="name" />
+                    </div>
+                    <div class="AddPeople__Add_Element">
+                        <label>Отчество</label>
+                        <input name="lastname" />
+                        <label>Телефон</label>
+                        <input name="phone" />
+                    </div>
+                    <div class="AddPeople__Add_Element">
+                        <label>Адресс</label>
+                        <input name="adress" />
+                        <label>Описание</label>
+                        <input name="description" />
+                    </div>
+                        <input type="submit" value="добавить" />
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>

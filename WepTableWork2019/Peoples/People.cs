@@ -10,7 +10,6 @@ namespace WepTableWork2019.Peoples
         public People()
         {
         }
-
         public People(int iD, string surname, string name, string lastname, string phone, string adress, string description)
         {
             ID = iD;
