@@ -31,11 +31,18 @@ namespace WepTableWork2019.Controllers
         
         public void AddPeople(string surname, string name, string lastname, string phone, string adress, string description)
         {
-            People PeopleLast = new People();
-            People people1 =  data.people.ToList().Last();
-            People people = new People(people1.ID+1, surname, name, lastname, phone, adress, description);
-            data.people.Add(people);
-            data.SaveChanges();
+            if(name==null)
+            {
+
+            }
+            else
+            {
+                People PeopleLast = new People();
+                People people1 = data.people.ToList().Last();
+                People people = new People(people1.ID + 1, surname, name, lastname, phone, adress, description);
+                data.people.Add(people);
+                data.SaveChanges();
+            }
         }
         public List<People> PeopleBD()
         {

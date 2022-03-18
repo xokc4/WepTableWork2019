@@ -44,9 +44,19 @@
 }
 .AddPeople {
     text-align: left;
-    border: 4px double black;
     padding: 20px;
+}
+.AddPeople__Form {
+    border: 4px double black;
+    padding:20px;
+    border-color:black;
 }
 .AddPeople__Add_Element {
     margin-bottom: 20px;
+}
+.AddPeople__Form__Add_button {
+    cursor: pointer;
+}
+.AddPeople__Form__Add_button:active {
+        background-color: #3B83BD;
 }

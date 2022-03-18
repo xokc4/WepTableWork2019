@@ -15,31 +15,31 @@
         </div>
         <div class="Main_boby__Inf_text">
             <form action="~/WorkerPeople/Update" method="put">
-                <div>
+                <div class="Main_boby__Inf_text__ElementsSql">
                     <label class="Main_boby__Inf_text__td">Айди работника - </label>
                     <label>@Model.ID</label>
                 </div>
-                <div>
+                <div  class="Main_boby__Inf_text__ElementsSql">
                     <label class="Main_boby__Inf_text__td">Фамилия работника -</label>
                     <input name="surname" value="@Model.Surname" />
                 </div>
-                <div>
+                <div  class="Main_boby__Inf_text__ElementsSql">
                     <label class="Main_boby__Inf_text__td">Имя работника -</label>
                     <input name="name" value="@Model.Name" />
                 </div>
-                <div>
+                <div  class="Main_boby__Inf_text__ElementsSql">
                     <label class="Main_boby__Inf_text__td">Отчество работника -</label>
                     <input name="lastname" value="@Model.Lastname" />
                 </div>
-                <div>
+                <div  class="Main_boby__Inf_text__ElementsSql">
                     <label class="Main_boby__Inf_text__td">Номер телефона работника -</label>
                     <input name="phone" value="@Model.Phone" />
                 </div>
-                <div>
+                <div  class="Main_boby__Inf_text__ElementsSql">
                     <label class="Main_boby__Inf_text__td">Адрес работника -</label>
                     <input name="adress" value="@Model.Adress" />
                 </div>
-                <div>
+                <div  class="Main_boby__Inf_text__ElementsSql">
                     <label class="Main_boby__Inf_text__td">О работнике -</label>
                     <input name="description" value="@Model.Description" />
                 </div>
@@ -47,7 +47,7 @@
             </form>
         </div>
         <div>
-            <form action="~/WorkerPeople/Delete" method="DELETE">
+            <form class="Main_boby__Inf_tex__Button_Dell" action="~/WorkerPeople/Delete" method="DELETE">
                 <input type="submit" value="Удалить" />
             </form>
         </div>
