@@ -62,6 +62,7 @@ namespace WepTableWork2019.Controllers
         {
             data.people.Remove(data.people.Find(peopleOnly.ID));
             data.SaveChanges();
+            View("Views/WorkerFull/Index");
         }
     }
 }

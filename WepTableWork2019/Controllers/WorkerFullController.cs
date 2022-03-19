@@ -28,20 +28,21 @@ namespace WepTableWork2019.Controllers
         /// <param name="phone"></param>
         /// <param name="adress"></param>
         /// <param name="description"></param>
-        
-        public void AddPeople(string surname, string name, string lastname, string phone, string adress, string description)
+        [HttpPost]
+        public void OnPost(string surname, string name, string lastname, string phone, string adress, string description)
         {
             if(name==null)
             {
-
+               
             }
             else
             {
-                People PeopleLast = new People();
+                
                 People people1 = data.people.ToList().Last();
                 People people = new People(people1.ID + 1, surname, name, lastname, phone, adress, description);
                 data.people.Add(people);
                 data.SaveChanges();
+                
             }
         }
         public List<People> PeopleBD()
